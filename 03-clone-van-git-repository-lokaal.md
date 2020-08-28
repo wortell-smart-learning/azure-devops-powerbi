@@ -25,7 +25,11 @@ Neem hiervoor de volgende stappen:
 
 !["Clone repository" in GitAhead](img/09-clone-repo-gitahead-button.png)
 
-6. Plak de zojuist gekopieerde URL van Azure DevOps in het vakje "URL". Klik **Next**
+6. Plak de zojuist gekopieerde URL van Azure DevOps in het vakje "URL".
+   * **Verwijder de gebruikersnaam voor de `@`**. 
+   * De URL ziet er nu niet meer uit als `https://blabla@dev.azure.com/...`, maar `https://dev.azure.com/...`
+   * (Wanneer je dit niet doet, blijft GitAhead continu om logingegevens vragen)
+   * Klik **Next**
 
 ![Plak de URL in GitAhead](img/10-clone-repo-gitahead-pasteurl.png)
 
@@ -49,6 +53,3 @@ Neem hiervoor de volgende stappen:
 
 ![Git credentials in GitAhead](img/14-git-credentials-in-gitahead.png)
 
-10. Het kan zijn dat GitAhead je nogmaals om de credentials vraagt - vul ze dan opnieuw in.
-
-Je hebt nu een **clone** gemaakt van de Git repository. In deze map kun je een Power BI bestand gaan neerzetten dat je geautomatiseerd wilt releasen. Deze kunnen we vervolgens opnemen in versiebeheer.
