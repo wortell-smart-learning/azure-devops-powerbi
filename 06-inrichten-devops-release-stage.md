@@ -152,12 +152,24 @@ Als het goed is, staat het *pane* nog open waarin je de nieuwe **service connect
 
 ![New service connection settings](img/44-new-devops-service-connection-settings.png)
 
-46. Vul de naam van de *workspace* in waarnaar je in Power BI de deployment wilt uitvoeren
+46. Vul bij **Workspace Name** een nieuwe workspace in die we gaan gebruiken voor deze deployment: `demo-pbug-2020`
 46. Gebruik de knop met ellipsis (`...`) om het Power BI rapport te selecteren in Azure Repos Git
+46. Vink de volgende opties aan:
+    * **Overwrite Power BI File**
+    * **Create if the workspace does not exist**
 
 ![Selecteer rapport](img/45-selecteer-pbi-rapport.png)
 
-48. Hernoem de pipeline naar *Voorbeeld deployment* en klik op **Save**
+49. Hernoem de pipeline naar *Voorbeeld deployment* en klik op **Save**
 
 ![Hernoem pipeline en sla op](img/46-opslaan-pipeline.png)
 
+## Voordat je de release uitvoert
+
+Voordat je nu een release uitvoert, is het verstandig om de zojuist benoemde Power BI workspace (`demo-pbug-2020`) handmatig aan te maken.
+
+Wanneer je dit niet doet, zal Power BI Actions voor jou de workspace aanmaken, maar heb je hier nog niet automatisch rechten op. Je kunt er dan niet zomaar bij.
+
+Na het aanmaken van de workspace moet je de service principal administrator-rechten geven op deze specifieke workspace. Dit zorgt ervoor dat hier deployments op kunnen plaatsvinden.
+
+![Add admin to workspace](img/50-add-admin-to-workspace.png)
