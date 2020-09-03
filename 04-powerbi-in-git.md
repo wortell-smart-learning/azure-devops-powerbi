@@ -8,7 +8,7 @@ We zullen in de precon niet zo veel op Git ingaan, maar onthoud deze twee dingen
 
 ## Je eerste Power BI bestand in Git
 
-1. Kopieer het bestand [Overzicht SDL.pbix](Overzicht SDL.pbix) naar de map waarin je eerder een *clone* van de repository hebt gemaakt
+1. Kopieer het bestand [Overzicht SDL.pbix](./Overzicht%20SDL.pbix) naar de map waarin je eerder een *clone* van de repository hebt gemaakt
 2. Open GitAhead
 
 Zoals je ziet is er links van het midden een nieuw blokje "uncommitted changes" bij gekomen. Zoals hierboven genoemd moet je een *commit* doorvoeren om deze onder versiebeheer te brengen.
