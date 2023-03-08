@@ -1,5 +1,7 @@
 # Azure DevOps voor Power BI
 
+For an English translated version of this course, see [This GitHub page](https://github.com/wortell-smart-learning/azure-devops-powerbi/blob/english/index.md).
+
 Welkom bij de [Wortell Smart Learning](https://www.wortell.nl/nl/smart-learning) precon "Azure DevOps voor Power BI"!
 
 Alle materialen voor deze training kun je hier [downloaden](https://github.com/wortell-smart-learning/devopspowerbi/archive/refs/heads/master.zip).
