@@ -28,7 +28,7 @@ From Wortell Smart Learning we offer various training courses in the field of CI
 * Our [full list of training courses](https://www.wortell.nl/nl/smart-learning) (did you know that at the bottom of the page you can run SQL queries on all our training courses including the timetable?)
 * [CI/CD with Azure DevOps for Data Engineers](https://www.wortell.nl/nl/smart-learning/cicd-met-azure-devops-voor-data-engineers)
   * Soon this will be split into three training sessions of 1 day each:
-  * [Git for Data Engineers](https://www.wortell.nl/nl/smart-learning/git-for-data-engineers)
+  * [Git for Data Engineers](https://www.wortell.nl/nl/smart-learning/git-voor-data-engineers)
   * CI/CD for Data Engineers
   * Infra-as-Code for Data Engineers
 
@@ -37,7 +37,7 @@ From Wortell Smart Learning we offer various training courses in the field of CI
 We also have a wide range of Power BI training courses, ranging from end user to performance tuning (or Data Management):
 
 * [Power BI: Self-reporting and analyzing data](https://www.wortell.nl/nl/smart-learning/power-bi-zelf-rapporteren-en-data-analyseren)
-* [Power BI Data Modelling](https://www.wortell.nl/nl/smart-learning/power-bi-data-modelling)
+* [Power BI Data Modelling](https://www.wortell.nl/nl/smart-learning/power-bi-data-modelleren)
 * [DAX for Power BI - level 1](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-1)
 * [DAX for Power BI - level 2](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-2)
 * [DAX for Power BI - level 3](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-3)
