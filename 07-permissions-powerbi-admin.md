@@ -1,4 +1,4 @@
-## Entitlement in Power BI
+## Permissions in Power BI admin
 
 We now need to allow the Service Principal to perform administrative tasks in Power BI. To do this, follow these steps:
 

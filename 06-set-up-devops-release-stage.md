@@ -10,7 +10,7 @@ We just provisioned a [new release pipeline in Azure DevOps Pipelines](05-provis
 
 9. Click on the plus sign next to the text **Agent Job**
 
-![plus sign next to agent job](img/32-plus sign next to agent job.png)
+![plus sign next to agent job](img/32-plusje-naast-agent-job.png)
 
 10. Search for **Power BI**
 
@@ -69,7 +69,7 @@ This is something you normally only need to set up once.
 Before Azure DevOps can perform tasks within Power BI for the first time, there must first be an account with which Power BI can do this. We first do this configuration in the Azure Portal.
 
 20. In a new tab, open the [Azure portal](https://portal.azure.com)
-21. Navigate to [Azure Active Directory](https://portal.azure.com/#blade/M1crosoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+21. Navigate to [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 21. Go to **App registrations**
 21. Click on **New Registration**
 
@@ -161,7 +161,7 @@ If all goes well, the *pane* is still open in which you were creating the new **
      * **Create if the workspace does not exist**
 49. Rename the pipeline to *Example deployment* and click on **Save**
 
-![Rename pipeline and save](img/46-save-pipeline.png)
+![Rename pipeline and save](img/46-opslaan-pipeline.png)
 
 ## Before you run the release
 

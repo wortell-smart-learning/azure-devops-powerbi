@@ -8,7 +8,7 @@ We won't go into Git that much in the precon, but keep these two things in mind:
 
 ## Your first Power BI file in Git
 
-1. Copy the file [Dashboard Wortell Smart Learning.pbix](https://github.com/rootl-smart-learning/devopspowerbi/raw/master/Dashboard%20Wortell%20Smart%20Learning.pbix) to the folder where you previously *clone* the repository
+1. Copy the file [Dashboard Wortell Smart Learning.pbix](https://github.com/wortell-smart-learning/devopspowerbi/raw/master/Dashboard%20Wortell%20Smart%20Learning.pbix) to the folder where you previously *clone* the repository
 2. Open GitAhead
 
 As you can see, a new block "uncommitted changes" has been added to the left of the middle. As mentioned above you have to make a *commit* to bring it under version control.
@@ -19,11 +19,11 @@ As you can see, a new block "uncommitted changes" has been added to the left of 
 4. Check the newly added report
 5. Click on **commit**
 
-![Commit commit in GitAhead](img/16-commit-commit.png)
+![Commit commit in GitAhead](img/16-commit-doorvoeren.png)
 
 6. The Power BI file is now versioned, but only locally on your computer. Open Azure DevOps, and verify that you don't see the Power BI file there yet.
 
-![No PBI file in DevOps](img/17-no-pbi-in-azure-devops.png)
+![No PBI file in DevOps](img/17-geen-pbi-in-azure-devops.png)
 
 7. Now click on the "Push" button in GitAhead at the top of the toolbar. This one has a red ball to indicate a commit is ready to be pushed:
 
@@ -31,7 +31,7 @@ As you can see, a new block "uncommitted changes" has been added to the left of 
 
 8. You have now also shared the changes you made locally in version control with the server. Open Azure DevOps, and verify that the Power BI file is now visible there.
 
-![Power BI in DevOps visible](img/19-pbi-in-devops-visible.png)
+![Power BI in DevOps visible](img/19-pbi-in-devops-zichtbaar.png)
 
 ## Conclusion
 

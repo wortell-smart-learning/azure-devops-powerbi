@@ -11,7 +11,7 @@ It is possible to change the data source of a report via the Power BI API. We fo
 1. Open **Azure DevOps**, navigate to **Pipelines**, **Releases**.
 1. Create a **clone** of the **Sample Pipeline** we created earlier.
 
-![Clone the example pipeline](img/47-clone-example-pipeline.png)
+![Clone the example pipeline](img/47-clone-voorbeeld-pipeline.png)
 
 The *clone* of the pipeline opens
 
@@ -25,8 +25,8 @@ The *clone* of the pipeline opens
     * Check **Update all datasources in workspace**
     * Dataset name: *leave blank*
     * Data source: **SQL**
-    * Old server: **rootlsmartlearning.database.windows.net**
-    * New server: **rootlsmartlearning-test.database.windows.net**
+    * Old server: **wortellsmartlearning.database.windows.net**
+    * New server: **wortellsmartlearning-test.database.windows.net**
     * Old database: **courses**
     * New database: **courses test**
 3. Save the pipeline

@@ -65,4 +65,4 @@ The **tasks** are what needs to be done to get your *release* done.
 
 ## Setting up the Stage
 
-To actually automate the rollout of your Power BI report, there must be a step-by-step plan: the *tasks* list. This is described in [Setup Release Stage](06-configure-devops-release-stage.md).
+To actually automate the rollout of your Power BI report, there must be a step-by-step plan: the *tasks* list. This is described in [Setup Release Stage](06-set-up-devops-release-stage.md).

@@ -42,7 +42,7 @@ We also have a wide range of Power BI training courses, ranging from end user to
 * [DAX for Power BI - level 2](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-2)
 * [DAX for Power BI - level 3](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-3)
 * [DAX for Power BI - level 4](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-4)
-* [Enterprise-scale Analytics using Azure and Power BI (DP-500)](https://www.wortell.nl/nl/smart-learning/enterprise-scale-analytics-using-azure-and-power-bi- dp-500)
+* [Enterprise-scale Analytics using Azure and Power BI (DP-500)](https://www.wortell.nl/nl/smart-learning/enterprise-scale-analytics-using-azure-and-power-bi-dp-500)
 * [Power BI Governance](https://www.wortell.nl/nl/smart-learning/power-bi-governance)
 * [Power Query](https://www.wortell.nl/nl/smart-learning/power-query)
 
