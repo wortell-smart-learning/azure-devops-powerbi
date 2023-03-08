@@ -1,46 +1,46 @@
 # Power BI in Git
 
-Nu we een lokale *clone* gemaakt hebben van de Git repository, kunnen we deze gebruiken om bestanden in versiebeheer te brengen.
-We zullen in de precon niet zo veel op Git ingaan, maar onthoud deze twee dingen:
+Now that we've made a local *clone* of the Git repository, we can use it to version control files.
+We won't go into Git that much in the precon, but keep these two things in mind:
 
-1. Wanneer je een bestand in de map aanpast, is het niet automatisch versiebeheerd. Daarvoor moet je een **commit** doorvoeren.
-2. Wanneer je een *commit* doorvoert, is je bestand alleen **lokaal** onder versiebeheer. Om het naar Azure DevOps te brengen doe je een **push**.
+1. When you modify a file in the folder, it is not automatically versioned. For that you have to make a **commit**.
+2. When you do a *commit* your file is only **locally** under version control. To bring it to Azure DevOps you do a **push**.
 
-## Je eerste Power BI bestand in Git
+## Your first Power BI file in Git
 
-1. Kopieer het bestand [Dashboard Wortell Smart Learning.pbix](https://github.com/wortell-smart-learning/devopspowerbi/raw/master/Dashboard%20Wortell%20Smart%20Learning.pbix) naar de map waarin je eerder een *clone* van de repository hebt gemaakt
+1. Copy the file [Dashboard Wortell Smart Learning.pbix](https://github.com/rootl-smart-learning/devopspowerbi/raw/master/Dashboard%20Wortell%20Smart%20Learning.pbix) to the folder where you previously *clone* the repository
 2. Open GitAhead
 
-Zoals je ziet is er links van het midden een nieuw blokje "uncommitted changes" bij gekomen. Zoals hierboven genoemd moet je een *commit* doorvoeren om deze onder versiebeheer te brengen.
+As you can see, a new block "uncommitted changes" has been added to the left of the middle. As mentioned above you have to make a *commit* to bring it under version control.
 
-![Uncommitted changes in het GitAhead scherm](img/15-uncommitted-changes.png)
+![Uncommitted changes in the GitAhead screen](img/15-uncommitted-changes.png)
 
-3. Geef een korte omschrijving van wat je gedaan hebt in het vakje "commit message"
-4. Vink het zojuist toegevoegde rapport aan
-5. Klik op **commit**
+3. Briefly describe what you did in the "commit message" box
+4. Check the newly added report
+5. Click on **commit**
 
-![Commit doorvoeren in GitAhead](img/16-commit-doorvoeren.png)
+![Commit commit in GitAhead](img/16-commit-commit.png)
 
-6. Het Power BI-bestand staat nu wel in versiebeheer, maar alleen nog lokaal op jouw computer. Open Azure DevOps, en verifieer dat je daar het Power BI bestand nog niet tegenkomt.
+6. The Power BI file is now versioned, but only locally on your computer. Open Azure DevOps, and verify that you don't see the Power BI file there yet.
 
-![Geen PBI bestand in DevOps](img/17-geen-pbi-in-azure-devops.png)
+![No PBI file in DevOps](img/17-no-pbi-in-azure-devops.png)
 
-7. Klik nu binnen GitAhead op de "Push" button bovenin de toolbar. Deze heeft een rode bal om aan te geven dat er een commit klaar staat om gepusht te worden:
+7. Now click on the "Push" button in GitAhead at the top of the toolbar. This one has a red ball to indicate a commit is ready to be pushed:
 
 ![Push changes in GitAhead](img/18-push-changes.png)
 
-8. Je hebt nu de wijzigingen die je lokaal in versiebeheer hebt gezet ook gedeeld met de server. Open Azure DevOps, en verifieer dat het Power BI bestand daar nu wel zichtbaar is.
+8. You have now also shared the changes you made locally in version control with the server. Open Azure DevOps, and verify that the Power BI file is now visible there.
 
-![Power BI in DevOps zichtbaar](img/19-pbi-in-devops-zichtbaar.png)
+![Power BI in DevOps visible](img/19-pbi-in-devops-visible.png)
 
-## Conclusie
+## Conclusion
 
-Je hebt nu een basis werkwijze om met versiebeheer te werken:
+You now have a basic way of working with version management:
 
-* Wijzigingen maken in je werkdirectory (nieuwe bestanden, aangepaste bestanden)
-* Commit doorvoeren met bijv. GitAhead
-* Push "opsturen" naar de server
+* Make changes to your working directory (new files, modified files)
+* Commit with e.g. GitAhead
+* Push "send" to the server
 
-Wanneer je met collega's samenwerkt aan een rapport, is het ten slotte goed om te beseffen dat de wijzigingen in Azure DevOps ook niet automatisch op jouw computer terecht komen! Je kunt de meest recente wijzigingen van Azure DevOps ophalen via de knop **Pull** in GitAhead:
+Finally, when you collaborate with colleagues on a report, it is good to realize that the changes in Azure DevOps do not automatically end up on your computer! You can get the latest changes from Azure DevOps via the **Pull** button in GitAhead:
 
-![Pull knop in GitAhead](img/20-pull-git-ahead.png)
+![Pull button in GitAhead](img/20-pull-git-ahead.png)

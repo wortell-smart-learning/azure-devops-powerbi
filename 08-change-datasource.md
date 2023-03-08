@@ -1,43 +1,42 @@
-# Veranderen van datasources gedurende deployment
+# Changing data sources during deployment
 
-Het is mogelijk om via de Power BI API de datasource van een rapport te veranderen. We volgen daarvoor het volgende stappenplan:
+It is possible to change the data source of a report via the Power BI API. We follow the following steps for this:
 
-* Publiceer het rapport
-* Verander de datasource (bijvoorbeeld naar de test-database)
-* Ververs de data
+* Publish the report
+* Change the data source (for example to the test database)
+* Refresh the data
 
-## Uitbreiden van de pipeline
+## Expanding the pipeline
 
-1. Open **Azure DevOps**, navigeer naar **Pipelines**, **Releases**.
-1. Maak een **clone** van de **Voorbeeld pipeline** die we eerder gemaakt hebben. 
+1. Open **Azure DevOps**, navigate to **Pipelines**, **Releases**.
+1. Create a **clone** of the **Sample Pipeline** we created earlier.
 
-![Clone de voorbeeld-pipeline](img/47-clone-voorbeeld-pipeline.png)
+![Clone the example pipeline](img/47-clone-example-pipeline.png)
 
-De *clone* van de pipeline opent zich
+The *clone* of the pipeline opens
 
-3. Klik op de titel (*Voorbeeld pipeline - Copy*), en hernoem deze naar **Voorbeeld datasource wijziging**. 
-3. Sla de pipeline op
-3. Open de **tasks** voor de **Test** stage
-3. Voeg opnieuw een **Power BI Action** taak aan toe, en geef deze de volgende instellingen mee:
-   * Power BI Service connection: selecteer uit de dropdown **Power BI voor Azure DevOps**
-   * Action: **Update DataSource connection**
-   * Workspace Name: `demo-pbug-2023`
-   * Vink **Update all datasources in workspace** aan
-   * Dataset name: *laat leeg*
-   * Datasource: **SQL**
-   * Old server: **wortellsmartlearning.database.windows.net**
-   * New server: **wortellsmartlearning-test.database.windows.net**
-   * Old database: **courses**
-   * New database: **courses-test**
-3. Sla de pipeline op
-3. Maak een nieuwe release aan.
+3. Click on the title (*Example pipeline - Copy*), and rename it to **Example data source change**.
+3. Save the pipeline
+3. Open the **tasks** for the **Test** stage
+3. Add another **Power BI Action** task, and give it the following settings:
+    * Power BI Service connection: select from the dropdown **Power BI for Azure DevOps**
+    * Action: **Update DataSource connection**
+    * Workspace Name: `demo-pbug-2023`
+    * Check **Update all datasources in workspace**
+    * Dataset name: *leave blank*
+    * Data source: **SQL**
+    * Old server: **rootlsmartlearning.database.windows.net**
+    * New server: **rootlsmartlearning-test.database.windows.net**
+    * Old database: **courses**
+    * New database: **courses test**
+3. Save the pipeline
+3. Create a new release.
 
-We zijn er nu nog niet! Weliswaar is de data source aangepast, maar in ons specifieke geval zijn er ook andere credentials nodig. Ook hierbij kan Power BI Actions je helpen.
+We're not there yet! It is true that the data source has been modified, but in our specific case other credentials are also required. Power BI Actions can also help you with this.
 
-Kijk of je hier zelf uitkomt - de gegevens die je nodig hebt zijn als volgt:
+See if you can figure this out yourself - the details you'll need are as follows:
 
 * Username: `testuser`
 * Password: `WortellSmartLearning.nl!`
 
-Uiteraard weet je pas of de nieuwe credentials werken wanneer je de dataset ververst zonder dat dit fouten oplevert. Ook het verversen van de dataset kun je aansturen via Power BI Actions.
-
+Of course, you only know if the new credentials work when you refresh the dataset without this causing errors. You can also control the refresh of the dataset via Power BI Actions.
