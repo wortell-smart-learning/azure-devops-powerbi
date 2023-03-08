@@ -2,7 +2,7 @@
 
 Welcome to the [Wortell Smart Learning](https://www.wortell.nl/nl/smart-learning) precon "Azure DevOps for Power BI"!
 
-All materials for this training can be [downloaded] here(https://github.com/wortell-smart-learning/devopspowerbi/archive/refs/heads/master.zip).
+All materials for this training can be [downloaded here](https://github.com/wortell-smart-learning/devopspowerbi/archive/refs/heads/english.zip).
 However, you don't have to do this in advance: if you follow the step-by-step plans here in the browser, you can download everything when you need it.
 
 ## Table of contents
