@@ -32,16 +32,12 @@ De *clone* van de pipeline opent zich
 3. Sla de pipeline op
 3. Maak een nieuwe release aan.
 
-## Conclusie - waar staan we?
+We zijn er nu nog niet! Weliswaar is de data source aangepast, maar in ons specifieke geval zijn er ook andere credentials nodig. Ook hierbij kan Power BI Actions je helpen.
 
-We hebben nu een geautomatiseerde deployment van Power BI. Na de deployment wordt de datasource "omgehangen". Echter, Power BI kent (nog) geen *credentials* voor het rapport dat zojuist gepubliceerd is.
+Kijk of je hier zelf uitkomt - de gegevens die je nodig hebt zijn als volgt:
 
-Er zijn diverse tools in de Azure DevOps Marketplace die een stukje van dit probleem oplossen, maar er is momenteel helaas niet één tool binnen de Visual Studio Marketplace waarin het mogelijk is om alles te doen wat we nodig hebben:
+* Username: `testuser`
+* Password: `WortellSmartLearning.nl!`
 
-* Rapporten te publiceren
-* Data sources te veranderen (nodig voor de DTAP/OTAP-straat)
-* Credentials te veranderen
+Uiteraard weet je pas of de nieuwe credentials werken wanneer je de dataset ververst zonder dat dit fouten oplevert. Ook het verversen van de dataset kun je aansturen via Power BI Actions.
 
-Vroeg of laat loop je hier tegenaan, en zul je - al dan niet in samenwerking met iemand die wat meer PowerShell en/of REST API-ervaring heeft - zelf een script moeten maken.
-
-Dat is dan ook wat we als laatste stap gaan doen.
