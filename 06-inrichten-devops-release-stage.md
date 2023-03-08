@@ -60,28 +60,22 @@ Voordat we vanuit **Azure DevOps** een rapport kunnen releasen binnen **Power BI
 We gaan hier een **Service Principal** voor gebruiken.
 Dit is iets wat je normaal gesproken maar één keer hoeft in te richten.
 
-19. Kies onder **Authentication type** voor **Service Principal**
 19. Klik onder **Power BI service connection** op **New**
 
 ![New service principal - connection](img/35-new-service-principal-connection.png)
-
-> Er zijn twee mogelijkheden hier om te gebruiken: **User** en **Service Principal**.
-> 
-> Een **User** account is een *regulier* Power BI-account, waar géén Multi-Factor Authentication op geactiveerd is. Daarnaast moet je in het Power BI Developer-portaal een app registreren.
-> Een **service principal** is een specifiek account voor automatisering binnen Azure. Deze zijn specifiek voor geautomatiseerde processen bedoeld. Daarom kiezen we nu voor een **service principal**.
 
 ### Inrichten van een service principal in de Azure Portal
 
 Voordat Azure DevOps de eerste keer taken kan uitvoeren binnen Power BI, moet er eerst een account zijn waarmee Power BI dit kan doen. Deze inrichting doen we allereerst in de Azure Portal.
 
-21. Open in een nieuw tabblad de [Azure portal](https://portal.azure.com)
+20. Open in een nieuw tabblad de [Azure portal](https://portal.azure.com)
 21. Navigeer naar [Azure Active Directory](https://portal.azure.com/#blade/M1crosoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 21. Ga naar **App registrations**
 21. Klik op **New Registration**
 
 ![New app registration](img/36-new-app-registration.png)
 
-25. Geef deze de naam **Azure DevOps deployments voor Power BI**. Laat de overige instellingen staan, en kies **Register**
+24. Geef deze de naam **Azure DevOps deployments voor Power BI**. Laat de overige instellingen staan, en kies **Register**
 
 ![Register application - settings](img/37-register-application-settings.png)
 
@@ -108,7 +102,7 @@ Azure AD vraagt nu wat voor soort *permissions* er nodig zijn.
 
 32. Ga naar **Certificates & Secrets**
 32. Klik **New client secret**
-32. Geef deze nieuwe secret de naam **Azure DevOps voor Power BI secret**, en selecteer onder **Expires** de waarde **Never**
+32. Geef deze nieuwe secret de naam **Azure DevOps voor Power BI secret**, en selecteer onder **Expires** een waarde ver in de toekomst.
 
 ![Create Secret](img/43-create-secret-firststep.png)
 
@@ -144,29 +138,34 @@ We hebben in de Azure Portal nu alle instellingen gedaan die nodig zijn voor de 
 Als het goed is, staat het *pane* nog open waarin je de nieuwe **service connection** naar Power BI aan het leggen was. 
 
 45. Vul de volgende gegevens in:
-    * **Service Principal ID**: De eerder gekopieerde **Application (client) ID**
-    * **Service Principal Key**: De eerder gekopieerde **Client secret**
+    * Authentication method: **Service Principal**
+    * Organization type: **Commercial (Public)**
     * **Tenant ID**: De eerder gekopieerde **Directory (tenant) ID**
+    * **Client ID**: De eerder gekopieerde **Application (client) ID**
+    * **Client Secret**: De eerder gekopieerde **Client secret**
     * **Service connection name**: Power BI voor Azure DevOps
+    * Vink het vakje **Grant access permission to all pipelines** aan
     * Klik **Save**
 
 ![New service connection settings](img/44-new-devops-service-connection-settings.png)
 
-46. Vul bij **Workspace Name** een nieuwe workspace in die we gaan gebruiken voor deze deployment: `demo-pbug-2020`
+> Er zijn twee mogelijkheden om te authenticeren bij Power BI: **User** en **Service Principal**.
+> 
+> Een **User** account is een *regulier* Power BI-account, waar géén Multi-Factor Authentication op geactiveerd is. Daarnaast moet je in de Power BI Developer-portal een app registreren.
+> Een **service principal** is een specifiek account voor automatisering binnen Azure. Deze zijn specifiek voor geautomatiseerde processen bedoeld. Daarom kiezen we nu voor een **service principal**.
+
+46. Vul bij **Workspace Name** een nieuwe workspace in die we gaan gebruiken voor deze deployment: `demo-pbug-2023`
 46. Gebruik de knop met ellipsis (`...`) om het Power BI rapport te selecteren in Azure Repos Git
 46. Vink de volgende opties aan:
     * **Overwrite Power BI File**
     * **Create if the workspace does not exist**
-
-![Selecteer rapport](img/45-selecteer-pbi-rapport.png)
-
 49. Hernoem de pipeline naar *Voorbeeld deployment* en klik op **Save**
 
 ![Hernoem pipeline en sla op](img/46-opslaan-pipeline.png)
 
 ## Voordat je de release uitvoert
 
-Voordat je nu een release uitvoert, is het verstandig om de zojuist benoemde Power BI workspace (`demo-pbug-2020`) handmatig aan te maken.
+Voordat je nu een release uitvoert, is het verstandig om de zojuist benoemde Power BI workspace (`demo-pbug-2023`) handmatig aan te maken.
 
 Wanneer je dit niet doet, zal Power BI Actions voor jou de workspace aanmaken, maar heb je hier nog niet automatisch rechten op. Je kunt er dan niet zomaar bij.
 

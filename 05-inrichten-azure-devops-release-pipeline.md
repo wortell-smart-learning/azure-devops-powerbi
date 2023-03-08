@@ -59,8 +59,7 @@ De **tasks** zijn datgene wat moet gebeuren om jouw *release* voor elkaar te kri
 
 8. Klik op **Agent job**. Je ziet aan de rechterzijde nu een eigenschappen-venster tevoorschijn komen. Als het goed is, staan de volgende instellingen hier:
 
-* Agent Pool: Azure Pipelines
-* Agent Specification: iets met Windows (vermoedelijk vs2017-win2016)
+* Agent Pool: Hosted Windows 2019 with VS2019
 
 ![Agent job settings](img/26-agent-job-settings.png)
 
