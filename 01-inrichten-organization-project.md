@@ -42,6 +42,23 @@ Geef je *organization* een naam, en vul indien nodig de captcha correct in.
 
 ![Name your Azure DevOps organization](img/04-name-devops-org.png)
 
+### Aanvragen van een "free tier"
+
+Je wilt Azure DevOps gaan gebruiken voor de deployment van Power BI-rapporten. Het uitvoeren van die deployment vereist echter dat er ergens op de wereld een computer moet draaien die dat voor je uitvoert.
+
+Microsoft heeft een zogenaamde "free tier" hier ingebouwd: je kunt per organisatie 1800 minuten aan DevOps Pipelines per maand gratis krijgen. **Wanneer je de "free tier" niet hebt, moet je zelf een server opzetten of huren - anders kun je geen deployment pipelines inzetten.**
+
+Aanvragen kan via het formulier [https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u)
+
+Belangrijk:
+
+* **Lees het formulier goed door** (zodat je niet per ongeluk een URL invoert inplaats van de naam van je organisation)
+* Het gaat om **private** projecten
+
+Na het indienen van dit formulier krijg je binnen enkele werkdagen een e-mail.
+
+Dit gaat alleen over het stukje van de **DevOps Pipelines**. De rest van dit stappenplan kun je dus gewoon volgen, en ook DevOps Repos kun je al gewoon gebruiken.
+
 ### Inrichten Azure DevOps project
 
 Met de nieuwe *organization* geopend in de linkerzijde van het scherm, zie je aan de rechterzijde het volgende scherm:
