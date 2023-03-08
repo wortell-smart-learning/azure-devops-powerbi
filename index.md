@@ -16,6 +16,34 @@ Dit hoef je echter niet vooraf te doen: wanneer je de stappenplannen hier in de 
 7. [Rechten aanpassen in de Power BI Admin](./07-rechten-aanpassen-powerbi-admin.md)
 8. [Aanpassen van Data Sources in je Power BI rapport](./08-change-datasource.md)
 
-## Meer informatie
+## Meer weten over Power BI en Azure DevOps?
 
-Meer informatie over deze training kun je vinden op [https://www.wortell.nl/nl/smart-learning/power-bi-rapporten-en-dashboards](https://www.wortell.nl/nl/smart-learning/power-bi-rapporten-en-dashboards)
+Op de website van [pbi.tools](https://pbi.tools) wordt een uitgebreide lijst bijgehouden van "community resources" over Power BI in combinatie met Azure DevOps.
+Je kunt deze vinden op [https://pbi.tools/devops/community-resources.html](https://pbi.tools/devops/community-resources.html).
+
+## Meer weten over Azure DevOps?
+
+Vanuit Wortell Smart Learning bieden we diverse trainingen aan op het gebied van CI/CD, Azure DevOps en Git.
+
+* Onze [volledige lijst trainingen](https://www.wortell.nl/nl/smart-learning) (wist je dat je onderaan de pagina SQL-queries kunt loslaten op al onze trainingen inclusief het rooster?)
+* [CI/CD met Azure DevOps voor Data Engineers](https://www.wortell.nl/nl/smart-learning/cicd-met-azure-devops-voor-data-engineers)
+  * Binnenkort wordt deze gesplitst in drie trainingen van ieder 1 dag:
+  * [Git voor Data Engineers](https://www.wortell.nl/nl/smart-learning/git-voor-data-engineers)
+  * CI/CD voor Data Engineers
+  * Infra-as-Code voor Data Engineers
+
+## Meer weten over Power BI?
+
+We hebben ook een flink aanbod aan Power BI trainingen, variërend van eindgebruiker tot aan performance tuning (of juist Data Management):
+
+* [Power BI: Zelf rapporteren en data analyseren](https://www.wortell.nl/nl/smart-learning/power-bi-zelf-rapporteren-en-data-analyseren)
+* [Power BI Data Modelleren](https://www.wortell.nl/nl/smart-learning/power-bi-data-modelleren)
+* [DAX voor Power BI - level 1](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-1)
+* [DAX voor Power BI - level 2](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-2)
+* [DAX voor Power BI - level 3](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-3)
+* [DAX voor Power BI - level 4](https://www.wortell.nl/nl/smart-learning/dax-voor-power-bi-level-4)
+* [Enterprise-scale Analytics using Azure en Power BI (DP-500)](https://www.wortell.nl/nl/smart-learning/enterprise-scale-analytics-using-azure-and-power-bi-dp-500)
+* [Power BI Governance](https://www.wortell.nl/nl/smart-learning/power-bi-governance)
+* [Power Query](https://www.wortell.nl/nl/smart-learning/power-query)
+
+Al onze trainingen kun je onbeperkt volgen wanneer je in ons Unlimited Learning-programma deelneemt. Alle informatie hierover is te vinden op onze pagina [Unlimited Learning](https://www.wortell.nl/nl/l/unlimited-learning).
