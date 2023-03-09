@@ -56,6 +56,20 @@ Power BI Actions is nu beschikbaar als taak binnen Azure DevOps pipelines.
 
 18. Klik nu de zojuist toegevoegde **task** aan. Alle instellingen die erbij horen komen nu aan de rechterzijde.
 
+> # Als je geen rechten hebt op Azure AD
+> 
+> Je kunt tijdens de Power BI precon gebruik maken van de volgende gegevens:
+>
+> * Tenant ID: 5f974108-b910-4cb9-a895-8c723d837771
+> * Client ID: 548b0f63-1b44-47af-a946-c9cc10154433
+> * Secret: 2XY8Q~SvhlxU2IFOcalkybBjctJzpatmlc_dlc4S
+>
+> Let op: deze werken uiteraard niet in jouw eigen organisatie, maar alleen in de WortellSmartLearning.onmicrosoft.com-organisatie!
+> Je kunt daarom alleen deployments doen naar Power BI in díe organisatie.
+> Inloggen op https://app.powerbi.com kun je dan het beste in een InPrivate / incognito browservenster doen met de volgende gegevens:
+> * Username: `smartXX@wortellsmartlearning.onmicrosoft.com` (kies je eigen getal!)
+> * Password: `WortellSmartLearning.nl`
+
 Voordat we vanuit **Azure DevOps** een rapport kunnen releasen binnen **Power BI**, moeten we eerst een **service-connection** aanmaken. 
 We gaan hier een **Service Principal** voor gebruiken.
 Dit is iets wat je normaal gesproken maar één keer hoeft in te richten.
